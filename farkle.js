@@ -79,6 +79,9 @@ function bankScore(){
 	availableScore = 0;
 	roundOver = true;
 	clearTransparent();
+	if(totalScore >= 10000) {
+		alert("congratulation! You WON!");
+	}
 }
 
 function clearTransparent(){
@@ -94,7 +97,7 @@ function clearTransparent(){
 function updateDiceImg() {
 	var diceImage;
 	for (var i = 0; i < 6; i++) {
-		diceImage = "images/" + diceArr[i].value + ".png";//changing picture base on the value instead of position.
+		diceImage = "images/" + diceArr[i].value + ".png";
 		document.getElementById(diceArr[i].id).setAttribute("src", diceImage);
 	}
 }
@@ -104,7 +107,7 @@ function diceClick(img) {
 	
 	img.classList.toggle("transparent");
 	if (diceArr[i].clicked === 0) {
-		diceArr[i].clicked = 1;//switched from double equal to one equal making clicked value to set instead of compare
+		diceArr[i].clicked = 1;
 	}
 	else {
 		diceArr[i].clicked = 0;
