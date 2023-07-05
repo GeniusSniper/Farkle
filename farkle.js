@@ -80,7 +80,7 @@ function bankScore(){
 	roundOver = true;
 	clearTransparent();
 	if(totalScore >= 10000) {
-		alert("congratulation! You WON!");
+		alert(`congratulation! You WON!`);
 	}
 }
 
