@@ -7,6 +7,7 @@ let roundOver = true;
 let preStoredScore = 0;
 let scoreSelectedPointsAndRisk;
 let roundoverelement;
+let rulePage;
 
 function initializeDice() {
 	for (i = 0; i < 6; i++) {
@@ -20,6 +21,7 @@ function initializeDice() {
 	scoreElement = document.querySelector('.score');
 	scoreSelectedPointsAndRisk = document.querySelector('.scoreSelectedPointsAndRisk');
 	roundoverelement = document.querySelector('.roundover');
+	rulePage = document.querySelector('.rulePage');
 }
 
 /*Rolling dice values*/
@@ -125,4 +127,8 @@ function updatePreScore(){
 	}
 	preStoredScore = calculatingScore(scores);
 	scoreSelectedPointsAndRisk.innerHTML = `Score ${preStoredScore} and risks your points to roll dice`;
+}
+
+function displayRules() {
+	rulePage.classList.toggle("disable");
 }
