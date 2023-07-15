@@ -95,10 +95,25 @@ body {
 }
 
 .rules {
-  display: block;
+  display: flex;
+  position: fixed;
   width: 30%;
   height: 40%;
   background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.ruleForm {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.ruleTitle {
+  display: flex;
+  justify-content: center;
 }
 
 .disable {
