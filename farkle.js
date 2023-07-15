@@ -22,6 +22,7 @@ function initializeDice() {
 	scoreSelectedPointsAndRisk = document.querySelector('.scoreSelectedPointsAndRisk');
 	roundoverelement = document.querySelector('.roundover');
 	rulePage = document.querySelector('.rulePage');
+	document.querySelector('.rules').addEventListener('click', e => e.stopPropagation());
 }
 
 /*Rolling dice values*/
