@@ -125,3 +125,16 @@ body {
 .disable {
 	display: none;
 }
+
+.ruleConfirm{
+	width: 20%;
+	min-width: 100px;
+	min-height: 20px;
+	align-self: center;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.ruleConfirm:hover{
+	background-color: rgb(160, 179, 241);
+}
